@@ -1,0 +1,162 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    word-break: break-all;
+}
+
+.titleFont {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    margin: 5% 0 1% 0;
+    font-weight: normal;
+}
+
+.contentTitle {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 7%;
+}
+
+.manager {
+    padding: 3% 3% 0% 3%;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* ----------------------------------------
+main visual
+------------------------------------------ */
+#mainVisual {
+    text-align: center;
+}
+#mainVisual img {
+    margin: 3% 3% 0% 3%;
+    width: 94%;
+    aspect-ratio: 16/7;
+}
+
+/* ----------------------------------------
+header
+------------------------------------------ */
+#header {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    padding-top: 1%;
+    margin: 0% 3% 2% 3%;
+    text-align: center;
+}
+#header #title {
+    font-size: 1.3em;
+    width: 100%;
+}
+#header #headerTitle {
+    margin-right: 10%;
+}
+#header .contentTitle {
+    font-weight: bold;
+}
+#header ul {
+    list-style: none;    
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#header li {
+    margin-right: 20%;
+    margin-top: 3%;
+}
+#header a {
+    text-decoration: none;
+    color: #383e38;
+
+}
+
+/* ----------------------------------------
+concept
+------------------------------------------ */
+#concept {
+    display: flex;
+    width: 94%;
+    padding-bottom: 5%;
+}
+#concept img {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+#concept .textBox {
+    width: 50%;
+    padding: 0 5%;
+    margin: 0;
+    align-items: center;
+}
+
+/* ----------------------------------------
+work
+------------------------------------------ */
+#work {
+    display: flex;
+    width: 94%;
+    padding-bottom: 5%;
+}
+#work .textBox {
+    width: 50%;
+    padding: 0% 5%;
+}
+#work img {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+    font-size: 0.8rem;
+}
+footer p {
+    margin: 0;
+}
+footer h1 {
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 955px ) {
+    #concept {
+        flex-direction: column;
+    }
+    #work {
+        flex-direction: column-reverse;
+    }
+    #concept img, #work img {
+        width: 40%;
+    }
+    #concept .textBox, #work .textBox {
+        width: 80%;
+    }
+    .manager {
+        padding: 3% 3% 0% 3%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .titleFont {
+        font-family: 'Caveat', cursive;
+        font-size: 2rem;
+        margin: 5% 0 1% 0;
+        font-weight: normal;
+    }
+}
